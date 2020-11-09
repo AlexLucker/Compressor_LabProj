@@ -31,6 +31,7 @@ void foo_02() {
 		cout << it;
 	}
 	cout << endl;
+	
 }
 
 void foo_03(){
@@ -44,6 +45,9 @@ void noParam() {
 	foo_02();
 }
 
+
+
+
 void Parse(int argc, char* argv[]) {
 
 }
@@ -52,15 +56,17 @@ void Parse(int argc, char* argv[]) {
 
 int main(int argc, char* argv[]) {
 	Utility::PreInit();
+	string inputFile;
+	string outputFile;
 	if (argc == 1)
-	{
-		cout << string(argv[0]) << endl;
 		noParam();
-		
-	}
 	else
 	{
-
+		if (argc >= 3)
+		{
+			inputFile = argv[1];
+			outputFile = argv[2];
+		}
 	}
 
 	return 0;

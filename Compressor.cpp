@@ -1,7 +1,9 @@
 #include "Compressor.h"
 #include <iostream>
 
-Compressor::Compressor() : input {std::cin}, output {std::cout}
+
+
+Compressor::Compressor(std::istream& in, std::ostream& out): input{in}, output{out}
 {
 }
 
