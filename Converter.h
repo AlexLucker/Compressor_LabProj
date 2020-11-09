@@ -1,6 +1,6 @@
 #pragma once
 #include "Data.h"
-typedef Data(*ConversionFunction)(Data d);
+using ConversionFunction = Data(*)(Data d);
 class Converter
 {
 public:
