@@ -138,7 +138,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Coder.cpp" />
+    <ClCompile Include="Compressor.cpp" />
+    <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="Decoder.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Coder.h" />
+    <ClInclude Include="Compressor.h" />
+    <ClInclude Include="Converter.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="Decoder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
