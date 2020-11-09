@@ -9,3 +9,8 @@ Data Decoder::convert(const Data&& Data)
 {
 	return function(Data);
 }
+
+void Decoder::setFunction(ConversionFunction fun)
+{
+	function = fun;
+}
