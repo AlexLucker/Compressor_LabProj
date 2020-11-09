@@ -4,11 +4,14 @@
 #include "Decoder.h"
 #include <fstream>
 #include <iostream>
-typedef Data(*ConversionFunction)(Data d);
+
 class Compressor
 {
 	Coder coder;
 	Decoder decoder;
-
+	std::istream input;
+	std::ostream output;
+public:
+	friend std::istream operator>>(std::istream& input, Compressor& compressor);
 };
 

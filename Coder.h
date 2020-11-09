@@ -2,6 +2,7 @@
 #include "Converter.h"
 class Coder : public Converter
 {
+	ConversionFunction function;
 public:
 	Data convert(const Data& Data) override;
 	Data convert(const Data&& Data) override;
