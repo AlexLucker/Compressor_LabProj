@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Coder.cpp" />
+    <ClCompile Include="CompressionsFunc.cpp" />
     <ClCompile Include="Compressor.cpp" />
     <ClCompile Include="Converter.cpp" />
     <ClCompile Include="Data.cpp" />
@@ -148,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Coder.h" />
+    <ClInclude Include="CompressionsFunc.h" />
     <ClInclude Include="Compressor.h" />
     <ClInclude Include="Converter.h" />
     <ClInclude Include="Data.h" />
