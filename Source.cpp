@@ -41,7 +41,7 @@ void foo_03(){
 
 }
 void foo_04();
-
+void foo_05();
 void noParam() {
 	foo_04();
 }
@@ -52,11 +52,13 @@ void foo_04() {
 	
 	Data d{ str };
 	auto tree{ CreateTreeCode(d) };
-	cout << "Работает" << endl;
-	printTree(cout,tree);
-
+	
+	auto textCode{ CodeText(d,tree) };
+	cout << string((char*)textCode.getData().data()) << endl;
 }
-
+void foo_05() {
+	cout << GetStringFromBinary(154) << endl;
+}
 
 
 void Parse(int argc, char* argv[]) {
